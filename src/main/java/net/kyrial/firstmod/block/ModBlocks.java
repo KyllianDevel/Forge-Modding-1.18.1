@@ -26,7 +26,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.FIRST_TAB);
+                    .strength(4f).requiresCorrectToolForDrops()), ModCreativeModeTab.FIRST_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,6 +1,7 @@
 package net.kyrial.firstmod.block;
 
 import net.kyrial.firstmod.FirstMod;
+import net.kyrial.firstmod.item.ModCreativeModeTab;
 import net.kyrial.firstmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,7 +22,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CITRINE_BLOCK = registerBlock("citrine_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(9f).requiresCorrectToolForDrops()), CreativeModeTab.TAB_MISC);
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.FIRST_TAB);
+
+    public static final RegistryObject<Block> CITRINE_ORE = registerBlock("citrine_ore",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(5f).requiresCorrectToolForDrops()), ModCreativeModeTab.FIRST_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

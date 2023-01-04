@@ -1,5 +1,8 @@
 {
   "item.firstmod.citrine": "Citrine",
 
-  "block.firstmod.citrine_block": "Citrine Block"
+  "block.firstmod.citrine_block": "Citrine Block",
+  "block.firstmod.citrine_ore": "Citrine Ore",
+
+  "itemGroup.firsttab": "First Mod"
 }

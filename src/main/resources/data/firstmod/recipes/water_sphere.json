@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#U#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "U": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "firstmod:water_sphere"
+  }
+}

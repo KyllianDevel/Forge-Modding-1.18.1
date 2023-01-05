@@ -1,6 +1,7 @@
 package net.kyrial.firstmod.item;
 
 import net.kyrial.firstmod.FirstMod;
+import net.kyrial.firstmod.item.custom.WaterSphereItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -13,6 +14,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> CITRINE = ITEMS.register("citrine",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FIRST_TAB)));
+
+    public static final RegistryObject<Item> WATER_SPHERE = ITEMS.register("water_sphere",
+            () -> new WaterSphereItem(new Item.Properties().tab(ModCreativeModeTab.FIRST_TAB)));
 
 
 

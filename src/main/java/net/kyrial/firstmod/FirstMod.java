@@ -28,6 +28,7 @@ public class FirstMod
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
+
     public FirstMod() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
